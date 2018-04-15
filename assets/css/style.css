@@ -1,9 +1,10 @@
 body {
     
     background-image: url("../images/hogwarts.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
-
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    height: auto;
 }
 
 #jumbo {

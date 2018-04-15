@@ -32,9 +32,11 @@ $(document).ready(function () {
             a3 = $("<div>").addClass("row text-center guessbtn").attr("value", 2).append(myObj.answers[num][2]);
             a4 = $("<div>").addClass("row text-center guessbtn").attr("value", 3).append(myObj.answers[num][3]);
             $("#answerRow").append(a1, a2, a3, a4);
+            myObj.timeleft = 11;
         }
         else{
             clearInterval(intervalId);
+            clockRunning = false;
             $("#timer").empty();
             $("#answerDisplay").empty();
             var numCorrect = $("<div>").append("Correct Guesses: "+myObj.correct);
@@ -122,7 +124,7 @@ $(document).ready(function () {
         $("#answerDisplay").append(wrongDisplay);
         myObj.questionNumer++;
         setTimeout(function(){
-            start();},2000);
+            displayQuestions(myObj.questionNumer);},2000);
 
     }
 
@@ -134,7 +136,7 @@ $(document).ready(function () {
         $("#answerDisplay").append(rightDisplay);
         myObj.questionNumer++;
         setTimeout(function(){
-            start();},2000);
+            displayQuestions(myObj.questionNumer);},2000);
 
     }
     
@@ -147,7 +149,7 @@ $(document).ready(function () {
         $("#answerDisplay").append(rightDisplay);
         myObj.questionNumer++;
         setTimeout(function(){
-            start();},2000);
+            displayQuestions(myObj.questionNumer);},2000);
 
     }
     function reset() {
@@ -157,7 +159,6 @@ $(document).ready(function () {
         myObj.guessarray = [];
         clockRunning = false;
         start();
-        // $(".resetbtn").hide();
     }
 
 
