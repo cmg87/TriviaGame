@@ -5,32 +5,50 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Trivia Game</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- link to style css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <title>Trivia Game</title>
+
     <script src="assets/javascript/app.js"></script>
-    </head>
+</head>
 
 <body>
-<button class="startbtn">Press Start</button>
-<button class="resetbtn">Restart Game</button>
-<div class="container">
-    <div class="row"  id="questionRow"></div>
-    <div class="row" id="answerRow"></div>
-    <div class="row" id="answerDisplay"></div>
-<div id="timer"></div>
-        
-    </div>
-    
-</div>
 
+    <!-- <button class="resetbtn">Restart Game</button> -->
+    <div class="jumbotron" id="jumbo">
+        <h1 class="display-3 text-center">Welcome To the Harry Potter Trivia Game!</h1>
+        <p class="lead"></p>
+        <hr class="my-2">
+        <p></p>
+        <p class="lead text-center">
+            <button class="btn btn-primary btn-lg startbtn text-center" role="button" style="color:white; opacity: 10">Press Start!</button>
+        </p>
+    </div>
+    <div class="container">
+        <section id="questionbox" class="text-center">
+                <div id="timer"></div>
+                <br>
+                <div class="row" style="font-size: 30px" id="questionRow"></div>
+                <br>
+                <div class="row" id="answerRow" style="font-size: 20px"></div>
+                <br>
+                <div class="row" id="answerDisplay" style="font-size: 20px;"></div>
+        </section>
+ 
+        
+
+    </div>
+
+    </div>
 
 
 
