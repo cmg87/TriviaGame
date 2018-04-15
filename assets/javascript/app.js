@@ -19,14 +19,7 @@ var myObj = {
 var intervalId;
 var clockRunning = false;
 
-function reset() {
-    myObj.questionNumer = 0;
-    myObj.unanswerd = 0;
-    myObj.correct = 0;
-    myObj.guessarray = [];
-    start();
-    // $(".resetbtn").hide();
-}
+
 
 
 $(document).ready(function () {
@@ -156,6 +149,15 @@ $(document).ready(function () {
         setTimeout(function(){
             start();},2000);
 
+    }
+    function reset() {
+        myObj.questionNumer = 0;
+        myObj.unanswerd = 0;
+        myObj.correct = 0;
+        myObj.guessarray = [];
+        clockRunning = false;
+        start();
+        // $(".resetbtn").hide();
     }
 
 
